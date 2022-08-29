@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0 auto;
+    font-family: "Noto Sans KR", "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(253, 243, 231);
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+#warrper {
+    /* height: auto;
+    min-height: 100%; */
+    /* min-height: 100%;
+    position: relative;
+    margin-bottom: 85px; */
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+#section {
+    padding-bottom: 88px;
+    /* flex: 1; */
+}
+
+.topnav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    background-color: rgb(253, 243, 231);
+    /* display: flex; */
+}
+.topnav span {
+    display: block;
+    padding: 10px 17px;
+    font-size: 30px;
+    font-weight: 25px;
+    color: rgba(25, 135, 84, 1);
+    float: left;
+}
+
+.topnav a {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    padding: 16px 14px;
+    float: left;
+    display: block;
+    color: rgba(25, 135, 84, 1);
+}
+
+.topnav a:hover {
+    background-color: rgba(25, 135, 84, 1);
+    color: rgb(253, 243, 231);
+}
+.topnav a.active {
+    /*?*/
+    background-color: rgba(25, 135, 84, 1);
+    color: rgb(253, 243, 231);
+}
+.topnav .icon {
+    /*햄버거 아이콘 일단 안보이게*/
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a {
+        display: none;
+    }
+    .clear {
+        clear: both;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+.topnav.responsive {
+    position: relative;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+/*햄버거 버튼 우상단 고정*/
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*--------------------------------------*/
+/*메인 이미지*/
+.carousel-caption {
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    /*~768*/
+    .carousel-item h2 {
+        font-size: 18px;
+    }
+}
+
+/*-----------------------------------------*/
+/*책추천*/
+
+#title1 {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px;
+    color: rgba(25, 135, 84, 1);
+    font-weight: 300;
+    margin: 0%;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.container .card {
+    width: 18rem;
+    margin: 10px auto;
+    transition: all 1s;
+}
+.container .card:hover{
+    /* transform: translate(10px ,10px); */
+    transform: scale(1.1);
+}
+
+.card img {
+    max-height: 380px;
+}
+
+.card a {
+    display: inline-block;
+    position: static;
+    bottom: 10px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        max-width: 1800px;
+    }
+}
+
+/*--------------------------------------------------------*/
+/*footer*/
+footer {
+    /* position : relative;
+    transform : translateY(-100%); */
+    background-color: rgba(25, 135, 84, 1);
+
+    width: 100%;
+    height: 88px;
+    bottom: 0;
+    position: absolute;
+
+    padding: 20px 20px 10px;
+    bottom: 0;
+}
+
+.footer {
+    background-color: rgba(25, 135, 84, 1);
+    color: rgb(253, 243, 231);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footA {
+    font-size: 30px;
+}
+.footB {
+    display: block;
+    /* margin-left: 130px; */
+    font-size: 14px;
+    text-align: center;
+    /* margin: 0 0 0 0; */
+}
+
+.footC {
+    float: right;
+}
+.footC ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.footC a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    padding: 0;
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .footC {
+        display: none;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        /* margin: 0 auto; */
+        /* m-width: 1500px; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        width: 100%;
+        height: 127px;
+        bottom: 0;
+        position: absolute;
+    }
+    #section {
+        padding-bottom: 127px;
+    }
+}
+/*------------------------------------*/
+/*로그인*/
+#login {
+    color: rgba(25, 135, 84, 1);
+}
+
+form.text-center {
+    max-width: 330px;
+    min-width: 330px;
+
+    /*가운데 정렬*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.join span {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.join p {
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+}
+.join p:hover {
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+/*--------------------------------------*/
+/*모달*/
+.input-form {
+    max-width: 680px;
+
+    /* width: 100%;
+    height: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px;
+
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+#modal_box  {
+    display: none;
+    width: 100%;
+    /* max-width: 100%; */
+    height: 100%;
+    background-color: #000;
+
+    z-index: 100;
+    overflow: auto;
+}
+#modal_box {
+    color: rgba(25, 135, 84, 1);
+}
+
+.input-form .btn-close {
+    float: right;
+}
+
+/* #modal_box .input-form {
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+    form {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+} */
+
+/*-------------------------------------------------------------------------------*/
+/*검색*/
+#search {
+    padding-top: 65px;
+}
+
+@media screen and (max-width: 786px) {
+    #search {
+        padding-top: 10px;
+        /* display: flex; */
+    }
+}
+
+.input {
+    display: flex;
+    width: 50%;
+    padding: 30px 60px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(25, 135, 84, 1);
+}
+
+.input .form-select {
+    width: 30%;
+    background-color: rgb(254, 253, 252);
+    /* display: inline; */
+    border: 1px solid rgba(25, 135, 84, 1);
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.input .form-control {
+    background-color: rgb(254, 253, 252);
+    border-radius: 0;
+    border: 1px solid rgba(25, 135, 84, 1);
+}
+
+.input #btn01 {
+    border-radius: 0 0.375rem 0.375rem 0;
+}
+
+#result {
+    text-align: center;
+    margin: 30px 0;
+}
+.card {
+    display: inline-block;
+    margin: 20px 30px;
+}
+
+#result img {
+    height: 295px;
+}
+
+#result .col-md-4 {
+    width: 203px;
+}
+
+#result .col-md-8 {
+    width: 590px;
+    background-color: rgb(254, 253, 252);
+    /* height: 294px; */
+}
+
+/*------------------------------------------------------*/
+/*map*/
+
+#map01 {
+    padding-top: 65px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#map_txt {
+    text-align: center;
+    padding: 15px 0;
+    color: rgba(25, 135, 84, 1);
+}
+.map_wrap,
+.map_wrap * {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-size: 12px;
+}
+.map_wrap a,
+.map_wrap a:hover,
+.map_wrap a:active {
+    color: #000;
+    text-decoration: none;
+}
+.map_wrap {
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.375rem;
+    position: relative;
+    overflow: hidden;
+}
+#menu_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    margin: 10px 0 30px 10px;
+    padding: 5px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.7); /*백컬러*/
+    z-index: 1;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+#menu_wrap hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #5f5f5f;
+    margin: 3px 0;
+}
+#menu_wrap .option {
+    text-align: center;
+}
+#menu_wrap .option p {
+    margin: 10px 0;
+}
+
+#placesList li {
+    list-style: none;
+}
+#placesList .item {
+    position: relative;
+    border-bottom: 1px solid #888;
+    overflow: hidden;
+    cursor: pointer;
+    min-height: 65px;
+}
+#placesList .item span {
+    display: block;
+    margin-top: 4px;
+}
+#placesList .item h5,
+#placesList .item .info {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#placesList .item .info {
+    padding: 10px 0 10px 55px;
+}
+#placesList .info .gray {
+    color: #8a8a8a;
+}
+#placesList .info .jibun {
+    padding-left: 26px;
+    background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png)
+        no-repeat;
+}
+#placesList .info .tel {
+    color: #009900;
+}
+#placesList .item .markerbg {
+    float: left;
+    position: absolute;
+    width: 36px;
+    height: 37px;
+    margin: 10px 0 0 10px;
+    background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png)
+        no-repeat;
+}
+#placesList .item .marker_1 {
+    background-position: 0 -10px;
+}
+#placesList .item .marker_2 {
+    background-position: 0 -56px;
+}
+#placesList .item .marker_3 {
+    background-position: 0 -102px;
+}
+#placesList .item .marker_4 {
+    background-position: 0 -148px;
+}
+#placesList .item .marker_5 {
+    background-position: 0 -194px;
+}
+#placesList .item .marker_6 {
+    background-position: 0 -240px;
+}
+#placesList .item .marker_7 {
+    background-position: 0 -286px;
+}
+#placesList .item .marker_8 {
+    background-position: 0 -332px;
+}
+#placesList .item .marker_9 {
+    background-position: 0 -378px;
+}
+#placesList .item .marker_10 {
+    background-position: 0 -423px;
+}
+#placesList .item .marker_11 {
+    background-position: 0 -470px;
+}
+#placesList .item .marker_12 {
+    background-position: 0 -516px;
+}
+#placesList .item .marker_13 {
+    background-position: 0 -562px;
+}
+#placesList .item .marker_14 {
+    background-position: 0 -608px;
+}
+#placesList .item .marker_15 {
+    background-position: 0 -654px;
+}
+#pagination {
+    margin: 10px auto;
+    text-align: center;
+}
+#pagination a {
+    display: inline-block;
+    margin-right: 10px;
+}
+#pagination .on {
+    font-weight: bold;
+    cursor: default;
+    color: #777;
+}
